@@ -17,8 +17,11 @@ export const Navbar = () => {
       </div>
 
       <div className='nav-middle flex-div'>
+        <div className='search-box flex-div'> 
         <input type="text" placeholder='Search' className='search-bar' />
         <img className='search_icon' src={search_icon} alt="Search Icon" />
+        </div>
+       
       </div>
 
       <div className='nav-right flex-div'>
