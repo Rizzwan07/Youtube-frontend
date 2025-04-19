@@ -1,0 +1,58 @@
+.home-container {
+  padding: 20px;
+  width: 100%;
+}
+
+.home-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  padding: 0 2%;
+  margin-left: 17%;  /* This matches sidebar width when open */
+  transition: margin 0.3s ease;
+}
+
+.large-container {
+  margin-left: 7%;  /* This matches sidebar width when collapsed */
+}
+
+.home-page {
+  width: 100%;
+  margin-top: 60px; /* Space for navbar */
+}
+
+.content-area {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.sidebar-closed {
+  margin-left: 5%; /* When sidebar is collapsed */
+  width: 95%;
+}
+
+.sidebar-open {
+  margin-left: 15%; /* When sidebar is open */
+  width: 85%;
+}
+
+@media (max-width: 900px) {
+  .sidebar-open {
+    margin-left: 25%;
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar-closed {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .sidebar-open {
+    margin-left: 70%;
+    width: 30%;
+  }
+}

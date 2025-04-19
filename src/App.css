@@ -1,0 +1,15 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  padding-top: 60px; /* Height of the navbar */
+  flex: 1;
+  display: flex;
+}
+
+.content-container {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+} 

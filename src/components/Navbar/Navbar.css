@@ -3,14 +3,17 @@ nav{
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: #fff;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 10;
+    left: 0;
+    right: 0;
+    z-index: 20;
 }
 
-.nav-left .menu-icon{
-    width: 20px;
+.nav-left .menu_icon {
+    width: 22px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .nav-left .logo{
@@ -31,16 +34,130 @@ nav{
     background: transparent;
 }
 
-.nav-middle .search-box img{
-    width: 15px;
+.search-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.nav-right img{
-    width: 25px;
+.search-icon {
+    color: #606060;
+}
+
+.mic-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.mic-icon {
+    color: #606060;
+}
+
+.mic-icon-container:hover {
+    background-color: #e6e6e6;
+}
+
+.create-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 12px;
+    cursor: pointer;
     margin-right: 25px;
+    transition: background-color 0.2s;
+}
+
+.create-button .create-icon {
+    color: #606060;
+    margin-right: 6px;
+}
+
+.create-button span {
+    font-size: 14px;
+    color: #606060;
+    font-weight: 500;
+}
+
+.create-button:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-right .nav-icon {
+    margin-right: 25px;
+    color: #606060;
+    cursor: pointer;
 }
 
 .nav-right .user-icon{
     width: 40px;
     border-radius: 50%;
+}
+
+.menu-button-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.menu-header {
+  padding: 10px 15px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.menu-divider {
+  height: 1px;
+  background: #eee;
+  margin: 5px 0;
+}
+
+.menu-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #f8f8f8;
+  color: #cc0000;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16px;
+  width: 22px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 2px;
+  width: 100%;
+  background-color: #606060;
+  border-radius: 2px;
 }

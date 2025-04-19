@@ -1,12 +1,20 @@
-import React from 'react'
-import './home.css'
-import { Sidebar } from '../../components/Sidebar/Sidebar'
+import React, { useContext } from 'react'
+import './Home.css'
+import Feed from '../../components/Feed/Feed'
+import CategoryNav from '../../components/CategoryNav/CategoryNav'
 
-export const home = () => {
+const Home = ({ showSidebar }) => {
+  // Sidebar open state could be passed as prop, but for now we'll assume it's closed
+  const sidebarOpen = false;
+  
   return (
-    
-    <>
-      <Sidebar/>
-    </>
-  )
-}
+    <div className="home-page">
+      <div className={`content-area ${sidebarOpen ? "sidebar-open" : "sidebar-closed"}`}>
+        <CategoryNav />
+        <Feed />
+      </div>
+    </div>
+  );
+};
+
+export default Home;
