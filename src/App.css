@@ -11,5 +11,43 @@
 }
 
 .content-container {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.main-content {
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+/* When sidebar is open */
+.sidebar.open + .main-content {
+  margin-left: 15%;
+  width: 85%;
+}
+
+/* When sidebar is collapsed */
+.sidebar.collapsed + .main-content {
+  margin-left: 2%;
+  width: 98%;
+}
+
+@media (max-width: 900px) {
+  .sidebar.open + .main-content {
+    margin-left: 25%;
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar.collapsed + .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .sidebar.open + .main-content {
+    margin-left: 70%;
+    width: 30%;
+  }
 } 
