@@ -74,7 +74,23 @@ const videos = [
     channel: "Clever Programmer",
     views: "1.2M views",
     timestamp: "1 month ago"
-  }
+  },
+  {
+    id: 2,
+    thumbnail: thumbnail2,
+    title: "How to make a website",
+    channel: "Web Dev Simplified",
+    views: "240K views",
+    timestamp: "3 days ago"
+  },
+  {
+    id: 6,
+    thumbnail: thumbnail6,
+    title: "UI/UX Design Masterclass",
+    channel: "DesignCode",
+    views: "420K views",
+    timestamp: "1 month ago"
+  } 
 ];
 
 const Feed = () => {
